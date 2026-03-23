@@ -1,0 +1,16 @@
+{
+  "name": "uno-online-game",
+  "version": "1.0.0",
+  "description": "Uno Online Game",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "cd server && npm install && npm start",
+    "build": "cd client && npm install && npm run build"
+  },
+  "keywords": ["uno", "game"],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "18.x"
+  }
+}
