@@ -1,6 +1,6 @@
 // Import necessary libraries
 import React, { useState, useEffect } from 'react';
-import WebSocket from 'ws';
+
 
 const App = () => {
     const [lobby, setLobby] = useState([]);
@@ -8,7 +8,7 @@ const App = () => {
     const [ws, setWs] = useState(null);
 
     useEffect(() => {
-        const socket = new WebSocket('ws://your-websocket-url');
+       const socket = new WebSocket('ws://your-websocket-url');
         setWs(socket);
 
         socket.onopen = () => {
